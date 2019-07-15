@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    android:id="@+id/appbar_layout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:theme="@style/LynnGroceryStore.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:paddingRight="8dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:popupTheme="@style/LynnGroceryStore.PopupOverlay">
+
+        <RelativeLayout
+            android:id="@+id/top_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/iv_user_account"
+                android:orientation="vertical">
+
+                <app.lynngrocerystore.util.TextviewReg
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/your_location"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <app.lynngrocerystore.util.TextviewReg
+                    android:id="@+id/yourLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/edit"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 140308"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_user_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_account" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:focusableInTouchMode="true"
+        android:padding="8dp">
+
+        <app.lynngrocerystore.util.EdittextViewReg
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_bg"
+            android:drawableLeft="@drawable/search_product_icon"
+            android:drawablePadding="4dp"
+            android:hint="@string/search_product_here"
+            android:padding="6dp"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</android.support.design.widget.AppBarLayout>

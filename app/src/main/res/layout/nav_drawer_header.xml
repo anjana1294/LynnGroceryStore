@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4b4949"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/light_round_shape_border_white"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="Login"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/light_round_shape_border_white"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="Sign Up"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:drawablePadding="4dp"
+        android:drawableRight="@android:drawable/ic_menu_edit"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="8dp"
+        android:text="Friends Enclave, Zirakpur, Chandigarh Tricity- 140603"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Your next available slot"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:text="13 Jul Saturday, 4:00 PM to 7:00 PM"
+        android:textColor="#979797" />
+</LinearLayout>
